@@ -1,36 +1,58 @@
 <html>
 <head>
-<title>facelook Edit Response</title>
+<title>facelook log-in or sign-up</title>
 </head>
 <body bgcolor="#c2dfff">
 <div id="header">
-<form method="post" action="kk1.php">
+<form method="post" action="kk3.php">
 <input id="search" type="text" name="mail" placeholder="Search friends by e-mail"/>
 <input id="search1" type="submit" value="Search" style="background-color:green;color:white;"/>
+</form>
+<form action="kk1.php" method="POST" id="hh">
+<p> Enter your E-mail:
+<input type="text" name="mail" required/>
+<input type="submit" name="submit" value="LOGIN" style="background-color:green;color:white;"/>
+</p>
 </form>
 <p><h1 id="view"><b>welcome to facelook</b></h1></p>
 </div>
 <div>
-<img src="thumps2.png" id="blank">
+<img src="thumps.png" id="blank">
 <img src="heart2.jpg" id="ww">
-<form action="edit.php" method="POST" id="form">
-<h1 id="p1">Edit Your Prev Response</h1>
-<p id="p">Enter the new firstname
+<form action="kk2.php" method="POST" id="form">
+<h1 id="p1">Sign Up</h1>
+<p>Enjoy to the zenith as it is free</p>
+<p id="p">Enter the firstname
 <input type="text" name="user" id="input" required />
 </p>
-<p id="p">Enter The new lastname:
+<p id="p">Enter The lastname:
 <input type="text" name="last" id="input" required/>
 </p>
-<p id="p"> Enter your new Mobile No.:
-<input type="number" name="phone" id="input" required/>
+<p id="p"> Enter your password:
+<input type="password" name="pass1" id="input" required/>
+</p>
+<p id="p">Upload your photo:
+<input type="file" name="image" id="input" required/>
+</p>
+<p id="p"> Enter your E-mail:
+<input type="text" name="mail" id="input" required/>
+</p>
+<p id="p"> Enter your Mobile No.:
+<input type="number" name="phone" id="input" equired/>
 </p>
 <p>
-By clicking Edit-Response, you agree to </p><p>change your previous record</p>
+By clicking Sign Up, you agree to </p><p>our Terms and that you have read our Data Policy</p>
 <p>
-<input type="submit" name="submit" id="input2" value="Edit-Response"/>
+<input type="submit" name="submit" id="input2" value="Sign-Up"/>
 </p>
 </form>
 <style>
+#hh{
+ color:white;
+ margin-top:-40px;
+ font-family:italic;
+ margin-left:800px;
+}
 #header{
    color:green;
    background-color:#151b8d;

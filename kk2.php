@@ -22,7 +22,7 @@
 	  $count2 = mysqli_num_rows($result2);
 	   if(($count > 0)) 
 	   {
-		   echo "Sorry the e-mail that you entered is already registered please enter another one";
+		   echo '<p style="color:blue;text-align:center;font-size:45;height:400px;width:100%;background-color:#c2dfff;">Sorry the password that you entered already exist</p> ';
 		   echo '<a href="login2.php"><button style="background-color:green;color:white; height:50px; width:90px;">Go Back</button></a>';
 	   }
 	   else if($count2>0){
@@ -42,8 +42,18 @@
 	$mob=$mob1;
 	$image=$image1;
 	$stmt->execute();
-	echo "New records added";
-	
+	echo'<body bgcolor="#c2dfff"><br/>';
+		   echo '<div style="color:green;background-color:#151b8d;width:101%;height:20%;margin-top:-28px;margin-left:-9px;"> 
+		    <form method="post" action="kk1.php">
+				<input style="color:green;height:40px;font-size:20;margin-top:5px;margin-left:20px;border-radius:5px;" type="text" 
+				name="mail" placeholder="Search friends by e-mail"/>
+				<input type="submit" value="Search" style="background-color:green;color:white;"/>
+			</form>
+		   <p><h1 style="color:white;margin-top:-48px;margin-left:350px;font-size:45;"><b>welcome to facelook</b></h1></p></div>
+		   <img src="heart3.jpg" height="100px" width="100px"><h1 style="color:green;margin-left:500px;font-size:45;margin-top:-100px;">Cover photo</h1> 
+		   <br/>';
+		   echo '<h1 style="color:green;text-align:center;">You are Succesfully logged in</h1>';
+		   echo '<h1 style="color:green;text-align:center;">To Enjoy it please log in</h1>';
 	echo ' <a href="view.php"><button style="background-color:green;color:white; height:50px; width:90px;">LOGIN</button></a>';
 	$stmt->close();
 	$conn->close();

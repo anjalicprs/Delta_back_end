@@ -26,14 +26,15 @@ $_SESSION['emailid'] = "$email1";
 		   <img src="heart3.jpg" height="100px" width="100px"><h1 style="color:green;margin-left:500px;font-size:45;margin-top:-100px;">Cover photo</h1> <br/>';
 		   echo '<img src="fun.jpg" height="300px" width="500px" style="margin-left:800px;margin-top:-100px;">';
 		   echo'<h1>Hello  ';
-		    echo $user;
-		   echo ' you are successfully loged in</h1>';
-		   echo '<h1 style="color:blue;">Your details are given below  </h1>';
+		   echo ' your friend ';
+		   echo $user;
+		   echo' is present on this site</h1>';
+		   echo '<h1 style="color:blue;">Your friend details are given below  </h1>';
 			 echo "<br> NAME : ".$row["firstname"]." ".$row["lastname"]."</br>";
-			  echo "<br> Password : ".$row["password"]."</br>";
 			   echo "<br> E-Mail : ".$row["email"]."</br>";
 			    echo "<br> MOBILE : ".$row["mob"]."</br>";
-				 echo ' <a href="edit2.php"><button style="background-color:green;color:white; height:50px; width:90px;border-radius:7px;">EDIT RESPONSE</button></a>';
+				 echo ' <a href="home.html"><button style="background-color:green;color:white; height:50px; width:90px;border-radius:7px;">Go to home page
+				 </button></a>';
 	 }else {
          echo "Sorry the e-mail that u gave is not registered";
       }
